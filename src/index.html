@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GreenWall Group</title>
-    <link rel="icon" href="./images/favicon.png" type="image/png">
+    <link rel="icon" href="./images/favicon.png" type="image/png" />
 
     <link rel="stylesheet" href="./sass/index.scss" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,12 +14,31 @@
       rel="stylesheet"
     />
     <script type="module" src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   </head>
   <body>
-    <include src="./partials/header.html"></include>
-      <include src="./partials/hero.html"></include>
-      <include src="./partials/aboutUs.html"></include>
-      <include src="./partials/services.html"></include>
-    <include src="./partials/footer.html"></include>
+    <div class="wrapper-main">
+      <include src="./partials/header.html"></include>
+
+      <div class="page">
+        <div class="page__wrapper">
+          <div class="page__screen screen">
+            <include src="./partials/hero.html"></include>
+          </div>
+          <div class="page__screen screen">
+            <include src="./partials/aboutUs.html"></include>
+          </div>
+          <div class="page__screen screen">
+            <include src="./partials/services.html"></include>
+          </div>
+          <div class="page__screen screen">
+            <include src="./partials/footer.html"></include>
+          </div>
+          <include src="./partials/modal.html"></include>
+        </div>
+        <div class="page__pagination"></div>
+        <div class="page__scroll"></div>
+      </div>
+    </div>
   </body>
 </html>

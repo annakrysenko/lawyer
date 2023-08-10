@@ -32,7 +32,7 @@
           <label for="formPhone" class="label">
             Phone number:
             <input
-              type="number"
+              type="tel"
               id="formPhone"
               name="formPhone"
               value=""
@@ -51,6 +51,17 @@
               required
             />
           </label>
+          <div class="custom-dropdown">
+            <input class="dropdown-toggle-footer"  name='inputServices' id="inputServices" placeholder="Choose a service" required></input>
+            <div class="dropdown-content-footer is-hidden">
+              <div class="dropdown-item" data-local="footer">Bookkeeping</div>
+              <div class="dropdown-item" data-local="footer">Payroll</div>
+              <div class="dropdown-item" data-local="footer">Financial analysis</div>
+              <div class="dropdown-item" data-local="footer">Tax preparation</div>
+              <div class="dropdown-item" data-local="footer">Legal services</div>
+              <div class="dropdown-item" data-local="footer">Company Formation</div>
+            </div>
+          </div>
 
           <button type="submit" class="submit">Send</button>
         </form>

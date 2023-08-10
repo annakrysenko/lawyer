@@ -75,6 +75,8 @@ input {
     padding: 10px 20px;
     font-size: 1.5rem;
     font-weight: 500;
+    transition:  background-color 0.3s ease-in-out;
+
 }
 
 // footer
@@ -106,6 +108,8 @@ input {
     font-style: normal;
     font-weight: 400;
     font-size: 1.3rem;
+
+   
     
 }
 
@@ -116,12 +120,23 @@ input {
     font-size: 1rem;
     display: flex;
     align-items: center;
+    transition: color 0.3s ease-in-out;
+    &:hover{
+        color: white;
+    }
+
+    &:hover .footer-icon {
+        fill: white;
+    }
 }
 .footer-icon{
-    fill: rgba(189, 189, 189, 0.697);
+ fill: rgba(189, 189, 189, 0.697);
  margin-right: 5px;
  width: 20px;
  height: 20px;
+ transition: fill 0.3s ease-in-out;
+
+
 }
 
 // social
@@ -141,13 +156,19 @@ input {
 .footer-social-list{
     display: flex;
     column-gap: 20px;
+
+   
 }
 
 .footer-social-icon{
     fill: white;
     background-color: #dbdbdb39;
     padding: 20px;
+   &:hover{
+    //    fill: #0d7331;
+       background-color: #dbdbdb14;
 
+   }
 }
 
 .phones{
@@ -155,3 +176,8 @@ input {
     flex-direction: column;
     row-gap: 8px;
 }
+
+.submit:hover{
+    background-color: #219048;
+}
+
